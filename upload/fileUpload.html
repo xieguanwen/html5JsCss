@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <form class="navbar-form navbar-left" role="search" action="" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input class="form-control" type="file" id="upload-file" multiple />
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="destination"></div>
+        <div id="showDiv">
+            <img id="showImg" width="120" height="120">
+        </div>
+    </div>
+    <script src="../js/jquery-3.0.0.js"></script>
+    <script src="../js/uploadPreview.js"></script>
+    <script src="script/fileUpload.js"></script>
+</body>
+</html>
